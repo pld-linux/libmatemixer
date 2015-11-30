@@ -1,12 +1,12 @@
 Summary:	MATE mixer libraries
 Summary(pl.UTF-8):	Biblioteki MATE do obsługi miksera
 Name:		libmatemixer
-Version:	1.12.0
+Version:	1.12.1
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://pub.mate-desktop.org/releases/1.12/%{name}-%{version}.tar.xz
-# Source0-md5:	a12209d88c8515abbbf54b6541355882
+# Source0-md5:	c1a49c40f8a34ed93dfbe27346d0394b
 URL:		https://github.com/mate-desktop/libmatemixer
 BuildRequires:	alsa-lib-devel >= 1.0.5
 BuildRequires:	autoconf >= 2.60
