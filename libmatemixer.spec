@@ -1,12 +1,12 @@
 Summary:	MATE mixer libraries
 Summary(pl.UTF-8):	Biblioteki MATE do obsługi miksera
 Name:		libmatemixer
-Version:	1.12.1
+Version:	1.14.0
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://pub.mate-desktop.org/releases/1.12/%{name}-%{version}.tar.xz
-# Source0-md5:	c1a49c40f8a34ed93dfbe27346d0394b
+Source0:	http://pub.mate-desktop.org/releases/1.14/%{name}-%{version}.tar.xz
+# Source0-md5:	9c66de01bb037609a813956ecf556944
 URL:		https://github.com/mate-desktop/libmatemixer
 BuildRequires:	alsa-lib-devel >= 1.0.5
 BuildRequires:	autoconf >= 2.60
@@ -18,7 +18,7 @@ BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool >= 2:2.2
 BuildRequires:	mate-common >= 1.5
 BuildRequires:	pkgconfig
-BuildRequires:	pulseaudio-devel >= 0.9.23
+BuildRequires:	pulseaudio-devel >= 2.0.0
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	glib2 >= 1:2.36.0
@@ -81,6 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/libmatemixer.la \
 	$RPM_BUILD_ROOT%{_libdir}/libmatemixer/*.la
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/{frp,jv}
 
 %find_lang %{name}
 
