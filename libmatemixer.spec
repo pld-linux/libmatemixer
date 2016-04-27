@@ -2,7 +2,7 @@ Summary:	MATE mixer libraries
 Summary(pl.UTF-8):	Biblioteki MATE do obsługi miksera
 Name:		libmatemixer
 Version:	1.14.0
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://pub.mate-desktop.org/releases/1.14/%{name}-%{version}.tar.xz
@@ -51,6 +51,9 @@ Pliki programistyczne biblioteki libmatemixer.
 Summary:	API documentation for libmatemixer library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libmatemixer
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 API documentation for libmatemixer library.
