@@ -22,6 +22,10 @@ BuildRequires:	pulseaudio-devel >= 2.0.0
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	glib2 >= 1:2.36.0
+# alsa module
+Requires:	alsa-lib >= 1.0.5
+# pulse module
+Requires:	pulseaudio-libs >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,7 +43,7 @@ Summary:	Development files for libmatemixer library
 Summary(pl.UTF-8):	Pliki programistyczne biblioteki libmatemixer
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	glib2-devel >= 1:2.36
+Requires:	glib2-devel >= 1:2.36.0
 
 %description devel
 Development files for libmatemixer library.
