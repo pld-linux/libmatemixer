@@ -1,18 +1,18 @@
 Summary:	MATE mixer libraries
 Summary(pl.UTF-8):	Biblioteki MATE do obsługi miksera
 Name:		libmatemixer
-Version:	1.18.0
+Version:	1.20.0
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://pub.mate-desktop.org/releases/1.18/%{name}-%{version}.tar.xz
-# Source0-md5:	ec4dcf758b7dcba6c602e6ce8bf280f9
+Source0:	http://pub.mate-desktop.org/releases/1.20/%{name}-%{version}.tar.xz
+# Source0-md5:	a2d53c2fe950b924dbd480158cf26b99
 URL:		https://github.com/mate-desktop/libmatemixer
 BuildRequires:	alsa-lib-devel >= 1.0.5
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-tools
-BuildRequires:	glib2-devel >= 1:2.36.0
+BuildRequires:	glib2-devel >= 1:2.50.0
 BuildRequires:	gtk-doc >= 1.10
 BuildRequires:	intltool >= 0.35.0
 BuildRequires:	libtool >= 2:2.2
@@ -21,7 +21,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	pulseaudio-devel >= 2.0.0
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires:	glib2 >= 1:2.36.0
+Requires:	glib2 >= 1:2.50.0
 # alsa module
 Requires:	alsa-lib >= 1.0.5
 # pulse module
@@ -43,7 +43,7 @@ Summary:	Development files for libmatemixer library
 Summary(pl.UTF-8):	Pliki programistyczne biblioteki libmatemixer
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	glib2-devel >= 1:2.36.0
+Requires:	glib2-devel >= 1:2.50.0
 
 %description devel
 Development files for libmatemixer library.
