@@ -54,9 +54,7 @@ Pliki programistyczne biblioteki libmatemixer.
 Summary:	API documentation for libmatemixer library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libmatemixer
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for libmatemixer library.
