@@ -18,6 +18,7 @@ BuildRequires:	libtool >= 2:2.2
 BuildRequires:	mate-common >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	pulseaudio-devel >= 5.0.0
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	udev-devel
 BuildRequires:	xz
